@@ -1,0 +1,11 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, quanity INTEGER, price INTEGER, rating INTEGER);
+INSERT INTO store VALUES (1, "Ball", 5, 2, 5);
+INSERT INTO store VALUES(2, "Kong", 3, 15, 5);
+INSERT INTO store VALUES(3, "Stuffed Sheep", 3, 5, 3);
+INSERT INTO store VALUES(4, "Nylabone", 7, 7, 2);
+INSERT INTO store VALUES(5, "Antler", 2, 12, 5);
+
+SELECT * FROM store
+ORDER BY price desc;
+
+SELECT max(price) FROM store
